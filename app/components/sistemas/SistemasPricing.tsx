@@ -5,7 +5,7 @@ export default function SistemasPricing() {
     <section className="py-12 bg-[#f8f9fa]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0d3b35] mb-4">
+          <h2 className="text-3xl md:text-4xl font-semibold text-[#0d3b35] mb-4">
             Planos de Hospedagem
           </h2>
         </div>
@@ -20,10 +20,10 @@ export default function SistemasPricing() {
 
             <div className="mb-6">
               <Rocket className="w-8 h-8 text-[#0d3b35] mb-4 stroke-[1.5]" />
-              <h3 className="text-2xl font-bold text-[#0d3b35]">Starter</h3>
+              <h3 className="text-2xl font-semibold text-[#0d3b35]">Starter</h3>
             </div>
 
-            <ul className="space-y-3 mb-8 flex-grow">
+            <ul className="space-y-3 mb-8 grow">
               {[
                 "5 caixas de e-mail",
                 "5GB Armazenamento",
@@ -39,7 +39,7 @@ export default function SistemasPricing() {
                 </li>
               ))}
             </ul>
-            <button className="w-full py-3 rounded-lg font-medium border border-gray-200 text-[#0d3b35] hover:bg-gray-50 transition-all text-sm">
+            <button className="w-full cursor-pointer py-3 rounded-lg font-medium border border-gray-200 text-[#0d3b35] hover:bg-gray-50 transition-all text-sm">
               Assinar agora
             </button>
           </div>
@@ -53,10 +53,10 @@ export default function SistemasPricing() {
 
             <div className="mb-6">
               <Building2 className="w-8 h-8 text-[#0d3b35] mb-4 stroke-[1.5]" />
-              <h3 className="text-2xl font-bold text-[#0d3b35]">Enterprise</h3>
+              <h3 className="text-2xl font-semibold text-[#0d3b35]">Enterprise</h3>
             </div>
 
-            <ul className="space-y-3 mb-8 flex-grow">
+            <ul className="space-y-3 mb-8 grow">
               {[
                 "15 caixas de e-mail",
                 "15GB Armazenamento",
@@ -72,7 +72,7 @@ export default function SistemasPricing() {
                 </li>
               ))}
             </ul>
-            <button className="w-full py-3 rounded-lg font-medium bg-[#0d3b35] text-white hover:bg-[#0a2e2a] transition-all text-sm shadow-md">
+            <button className="w-full cursor-pointer py-3 rounded-lg font-medium bg-[#0d3b35] text-white hover:bg-[#0a2e2a] transition-all text-sm shadow-md">
               Assinar agora
             </button>
           </div>
@@ -86,10 +86,10 @@ export default function SistemasPricing() {
 
             <div className="mb-6">
               <Gem className="w-8 h-8 text-[#0d3b35] mb-4 stroke-[1.5]" />
-              <h3 className="text-2xl font-bold text-[#0d3b35]">Premium</h3>
+              <h3 className="text-2xl font-semibold text-[#0d3b35]">Premium</h3>
             </div>
 
-            <ul className="space-y-3 mb-8 flex-grow">
+            <ul className="space-y-3 mb-8 grow">
               {[
                 "25 caixas de e-mail",
                 "25GB Armazenamento",
@@ -105,7 +105,7 @@ export default function SistemasPricing() {
                 </li>
               ))}
             </ul>
-            <button className="w-full py-3 rounded-lg font-medium border border-gray-200 text-[#0d3b35] hover:bg-gray-50 transition-all text-sm">
+            <button className="w-full cursor-pointer py-3 rounded-lg font-medium border border-gray-200 text-[#0d3b35] hover:bg-gray-50 transition-all text-sm">
               Assinar agora
             </button>
           </div>

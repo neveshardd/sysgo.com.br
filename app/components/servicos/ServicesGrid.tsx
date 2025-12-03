@@ -39,7 +39,7 @@ export default function ServicesGrid() {
     <section className="py-24 px-6 max-w-7xl mx-auto">
       <div className="grid md:grid-cols-2 gap-12 mb-16 items-end">
         <div>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0d3b35] mb-4 leading-tight">
+          <h2 className="text-3xl md:text-4xl font-semibold text-[#0d3b35] mb-4 leading-tight">
             Tudo o que você precisa, em um único sistema
           </h2>
         </div>
@@ -60,16 +60,16 @@ export default function ServicesGrid() {
               <div className={`p-3 rounded-xl ${feature.highlight ? 'bg-[#0d3b35]/10' : 'bg-gray-50'}`}>
                 <feature.icon className={`w-6 h-6 ${feature.highlight ? 'text-[#0d3b35]' : 'text-[#0d3b35]'}`} />
               </div>
-              {feature.highlight && <span className="bg-white text-[10px] font-bold px-2 py-1 rounded-full text-[#0d3b35] uppercase tracking-wider">Novo</span>}
+              {feature.highlight && <span className="bg-white text-[10px] font-semibold px-2 py-1 rounded-full text-[#0d3b35] uppercase tracking-wider">Novo</span>}
             </div>
-            <h3 className="text-xl font-bold text-[#0d3b35] mb-3">{feature.title}</h3>
+            <h3 className="text-xl font-semibold text-[#0d3b35] mb-3">{feature.title}</h3>
             <p className="text-gray-600 text-sm leading-relaxed">{feature.description}</p>
           </div>
         ))}
       </div>
 
       <div className="mt-12 text-center">
-        <button className="px-8 py-3 bg-[#0d3b35] text-white font-semibold rounded-lg hover:bg-[#0a2e2a] transition-all shadow-md hover:shadow-lg">
+        <button className="px-8 py-3 cursor-pointer bg-[#0d3b35] text-white font-semibold rounded-lg hover:bg-[#0a2e2a] transition-all shadow-md hover:shadow-lg">
           Ver todos os recursos
         </button>
       </div>

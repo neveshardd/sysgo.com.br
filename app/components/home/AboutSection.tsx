@@ -5,7 +5,7 @@ export default function AboutSection() {
     <section className="relative z-10 max-w-7xl mx-auto px-6 py-24 lg:py-32 bg-[#fcfdfd]">
       <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         <div className="text-left">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0d3b35] mb-6 leading-tight">
+          <h2 className="text-3xl md:text-4xl font-semibold text-[#0d3b35] mb-6 leading-tight">
             Mais leveza na rotina de quem carrega tudo nas costas
           </h2>
           <div className="space-y-6 text-lg text-gray-600 leading-relaxed">

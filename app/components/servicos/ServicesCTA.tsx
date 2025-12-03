@@ -10,13 +10,13 @@ export default function ServicesCTA() {
       </div>
 
       <div className="max-w-4xl mx-auto relative z-10">
-        <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+        <h2 className="text-3xl md:text-5xl font-semibold text-white mb-6 leading-tight">
           Você não precisa acreditar. Só precisa testar
         </h2>
         <p className="text-green-100 mb-10 text-lg md:text-xl max-w-2xl mx-auto">
           Experimente na prática como nossa solução pode transformar o dia a dia da sua empresa. Sem compromisso e sem cartão de crédito.
         </p>
-        <button className="px-10 py-4 bg-white text-[#0d3b35] font-bold rounded-lg hover:bg-gray-100 transition-all transform hover:-translate-y-1 shadow-xl text-lg">
+        <button className="px-10 py-4 cursor-pointer bg-white text-[#0d3b35] font-semibold rounded-lg hover:bg-gray-100 transition-all transform hover:-translate-y-1 shadow-xl text-lg">
           Começar teste grátis
         </button>
       </div>

@@ -17,7 +17,7 @@ export default function DepoimentosFeatureDark() {
             </div>
           </div>
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
+            <h2 className="text-3xl md:text-4xl font-semibold mb-6 leading-tight">
               Cada negócio é único. Seu sistema também pode ser.
             </h2>
             <div className="space-y-6 text-gray-300 leading-relaxed text-lg">

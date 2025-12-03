@@ -3,7 +3,7 @@ export default function ContatoForm() {
     <section className="py-24 bg-[#0d3b35]">
       <div className="max-w-4xl mx-auto px-6">
         <div className="text-center mb-12 text-white">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Fale com quem resolve.</h2>
+          <h2 className="text-3xl md:text-4xl font-semibold mb-4">Fale com quem resolve.</h2>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
             Se você precisa de ajuda, quer tirar dúvidas ou iniciar um projeto personalizado, estamos aqui para te ouvir.
           </p>
@@ -55,14 +55,14 @@ export default function ContatoForm() {
 
             <button
               type="submit"
-              className="w-full py-4 bg-[#0d3b35] text-white rounded-lg font-bold hover:bg-[#0a2e2a] transition-colors text-lg"
+              className="w-full cursor-pointer py-4 bg-[#0d3b35] text-white rounded-lg font-semibold hover:bg-[#0a2e2a] transition-colors text-lg"
             >
               Enviar mensagem
             </button>
 
             <div className="text-center pt-4">
               <p className="text-gray-500 text-sm">
-                Ou, se preferir, chame no WhatsApp <a href="#" className="text-[#0d3b35] font-bold hover:underline">clicando aqui</a>
+                Ou, se preferir, chame no WhatsApp <a href="#" className="text-[#0d3b35] font-semibold hover:underline">clicando aqui</a>
               </p>
             </div>
           </form>

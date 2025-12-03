@@ -36,16 +36,16 @@ export default function TestimonialsSection() {
     <section className="relative py-24 lg:py-32 bg-[#f5f7f8]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0d3b35] mb-4">
+          <h2 className="text-3xl md:text-4xl font-semibold text-[#0d3b35] mb-4">
             Faça como os nossos clientes e destrave o próximo nível da sua empresa
           </h2>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow">
+            <div key={index} className="bg-white rounded-2xl p-8 border border-teal-900/20">
               <div className="flex items-start gap-4 mb-6">
-                <div className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0">
+                <div className="w-12 h-12 rounded-full overflow-hidden shrink-0">
                   <Image
                     src={testimonial.avatar}
                     alt={testimonial.name}
@@ -55,15 +55,15 @@ export default function TestimonialsSection() {
                   />
                 </div>
                 <div>
-                  <h3 className="font-bold text-[#0d3b35] text-lg">{testimonial.name}</h3>
+                  <h3 className="font-semibold text-[#0d3b35] text-lg">{testimonial.name}</h3>
                   <p className="text-sm text-gray-500">{testimonial.company}</p>
                 </div>
               </div>
               <p className="text-gray-600 mb-6 leading-relaxed">
                 &ldquo;{testimonial.text}&rdquo;
               </p>
-              <div className="inline-block">
-                <span className="text-xs font-semibold px-3 py-1.5 bg-gray-100 rounded-full text-[#0d3b35] border border-gray-200">
+              <div className="inline-block rounded-full p-[1.5px] bg-[linear-gradient(to_bottom,var(--color-teal-200),var(--color-teal-600),var(--color-teal-200),var(--color-teal-600))]">
+                <span className="block text-xs font-semibold px-3 py-1.5 bg-white rounded-full text-[#0d3b35] border border-transparent">
                   {testimonial.badge}
                 </span>
               </div>
@@ -72,7 +72,7 @@ export default function TestimonialsSection() {
         </div>
 
         <div className="text-center">
-          <button className="px-8 py-3 bg-[#0d3b35] text-white rounded-lg font-semibold hover:bg-[#0a2e2a] transition-colors">
+          <button className="px-8 py-3 cursor-pointer bg-[#0d3b35] text-white rounded-lg font-semibold hover:bg-[#0a2e2a] transition-colors">
             Testar agora por 7 dias grátis
           </button>
         </div>

@@ -30,7 +30,7 @@ export default function HeroSection() {
           <span className="text-[#0d3b35]">
             <Zap className="w-3 h-3" />
           </span>
-          <span className="text-[11px] font-bold tracking-widest text-gray-600 uppercase">Soluções em Nuvem</span>
+          <span className="text-[11px] font-semibold tracking-widest text-gray-600 uppercase">Soluções em Nuvem</span>
         </div>
 
         {/* Headline */}

@@ -10,11 +10,11 @@ export default function SocialProof() {
           <span className="text-2xl font-black tracking-tighter text-gray-600 font-sans">LOGOIPSUM</span>
           <div className="flex items-center gap-1">
             <div className="w-6 h-6 rounded-full border-2 border-gray-600"></div>
-            <span className="text-xl font-bold text-gray-600 font-sans">Company</span>
+            <span className="text-xl font-semibold text-gray-600 font-sans">Company</span>
           </div>
-          <span className="text-2xl font-bold italic text-gray-600 font-serif">BrandName</span>
+          <span className="text-2xl font-semibold italic text-gray-600 font-serif">BrandName</span>
           <span className="text-xl font-medium text-gray-600 uppercase tracking-widest">Partner</span>
-          <span className="text-2xl font-bold text-gray-600 font-mono">IPSUM</span>
+          <span className="text-2xl font-semibold text-gray-600 font-mono">IPSUM</span>
         </div>
       </div>
     </footer>

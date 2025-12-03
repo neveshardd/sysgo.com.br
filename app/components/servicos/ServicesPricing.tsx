@@ -29,7 +29,7 @@ export default function ServicesPricing() {
   return (
     <section className="py-24 px-6 max-w-7xl mx-auto">
       <div className="text-center mb-16">
-        <h2 className="text-3xl md:text-4xl font-bold text-[#0d3b35] mb-4">
+        <h2 className="text-3xl md:text-4xl font-semibold text-[#0d3b35] mb-4">
           Planos de Gestão de Ordens de Serviço
         </h2>
         <p className="text-gray-600 text-lg">Escolha o plano ideal para o momento do seu negócio</p>
@@ -42,13 +42,13 @@ export default function ServicesPricing() {
             className={`p-8 rounded-2xl border ${plan.highlight ? 'border-[#0d3b35] shadow-2xl relative scale-105 z-10' : 'border-gray-200 hover:border-gray-300'} bg-white transition-all`}
           >
             {plan.highlight && (
-              <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#0d3b35] text-white px-4 py-1 rounded-full text-sm font-bold shadow-md">
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#0d3b35] text-white px-4 py-1 rounded-full text-sm font-semibold shadow-md">
                 Mais Popular
               </div>
             )}
-            <h3 className="text-xl font-bold text-[#0d3b35] mb-2">{plan.name}</h3>
+            <h3 className="text-xl font-semibold text-[#0d3b35] mb-2">{plan.name}</h3>
             <div className="flex items-baseline gap-1 mb-4">
-              <span className="text-4xl font-bold text-[#0d3b35]">{plan.price}</span>
+              <span className="text-4xl font-semibold text-[#0d3b35]">{plan.price}</span>
               <span className="text-gray-500 font-medium">{plan.period}</span>
             </div>
             <p className="text-gray-600 mb-8 text-sm leading-relaxed min-h-[40px]">{plan.description}</p>
@@ -66,7 +66,7 @@ export default function ServicesPricing() {
               ))}
             </ul>
 
-            <button className={`w-full py-3 rounded-lg font-bold transition-all ${plan.highlight ? 'bg-[#0d3b35] text-white hover:bg-[#0a2e2a] shadow-lg' : 'bg-gray-100 text-[#0d3b35] hover:bg-gray-200'}`}>
+            <button className={`w-full cursor-pointer py-3 rounded-lg font-semibold transition-all ${plan.highlight ? 'bg-[#0d3b35] text-white hover:bg-[#0a2e2a] shadow-lg' : 'bg-gray-100 text-[#0d3b35] hover:bg-gray-200'}`}>
               {plan.highlight ? 'Começar Agora' : 'Falar com Consultor'}
             </button>
           </div>

@@ -17,7 +17,7 @@ export default function SistemasFeatureDark() {
             </div>
           </div>
           <div className="order-1 lg:order-2">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Por que isso importa?</h2>
+            <h2 className="text-3xl md:text-4xl font-semibold mb-6">Por que isso importa?</h2>
             <div className="space-y-6 text-gray-300 leading-relaxed">
               <p>
                 Sem complicações, sem letras miúdas e com atendimento que resolve.

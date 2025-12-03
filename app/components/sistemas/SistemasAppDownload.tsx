@@ -10,8 +10,8 @@ export default function SistemasAppDownload() {
               <Wifi className="w-full h-full stroke-[1.5]" />
             </div>
             <div>
-              <h3 className="text-xl font-bold text-[#0d3b35] mb-2">Servidores para aplicação</h3>
-              <button className="mt-4 px-8 py-3 rounded-lg font-medium border border-gray-200 text-[#0d3b35] hover:bg-gray-50 transition-all text-sm w-full md:w-auto">
+              <h3 className="text-xl font-semibold text-[#0d3b35] mb-2">Servidores para aplicação</h3>
+              <button className="mt-4 px-8 py-3 cursor-pointer rounded-lg font-medium border border-gray-200 text-[#0d3b35] hover:bg-gray-50 transition-all text-sm w-full md:w-auto">
                 Assinar agora
               </button>
             </div>

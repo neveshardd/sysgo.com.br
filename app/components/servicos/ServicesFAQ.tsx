@@ -13,11 +13,11 @@ export default function ServicesFAQ() {
     <section className="py-24 px-6 max-w-5xl mx-auto">
       <div className="grid md:grid-cols-12 gap-12">
         <div className="md:col-span-4">
-          <h2 className="text-3xl font-bold text-[#0d3b35] mb-4">Perguntas Frequentes</h2>
+          <h2 className="text-3xl font-semibold text-[#0d3b35] mb-4">Perguntas Frequentes</h2>
           <p className="text-gray-600 mb-6">
             Tire suas dúvidas sobre nossa plataforma. Se não encontrar a resposta, entre em contato com nosso time.
           </p>
-          <button className="text-[#0d3b35] font-bold underline hover:text-[#0a2e2a]">
+          <button className="text-[#0d3b35] cursor-pointer font-semibold underline hover:text-[#0a2e2a]">
             Falar com atendente
           </button>
         </div>

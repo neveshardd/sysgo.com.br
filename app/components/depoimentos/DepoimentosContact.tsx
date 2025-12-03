@@ -4,7 +4,7 @@ export default function DepoimentosContact() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0d3b35] mb-6 leading-tight">
+            <h2 className="text-3xl md:text-4xl font-semibold text-[#0d3b35] mb-6 leading-tight">
               Vamos conversar sobre sua demanda?
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed mb-8">
@@ -44,7 +44,7 @@ export default function DepoimentosContact() {
               </div>
               <button
                 type="submit"
-                className="w-full py-3 bg-white text-[#0d3b35] rounded-lg font-bold hover:bg-gray-100 transition-colors"
+                className="w-full cursor-pointer py-3 bg-white text-[#0d3b35] rounded-lg font-semibold hover:bg-gray-100 transition-colors"
               >
                 Enviar
               </button>
