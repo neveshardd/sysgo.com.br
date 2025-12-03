@@ -22,7 +22,7 @@ export default function AboutSection() {
         </div>
         <div className="relative">
           <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-w-16 aspect-h-9"> {/* Added aspect ratio for better fill behavior */}
-            <Image src="/section2-image.jpg" alt="Rotina leve" fill className="object-cover" />
+            <Image src="/section2-image.jpg" alt="Rotina leve" className="object-cover" width={1000} height={562} />
           </div>
         </div>
       </div>

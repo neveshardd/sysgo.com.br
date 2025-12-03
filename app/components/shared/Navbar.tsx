@@ -5,15 +5,15 @@ export default function Navbar() {
   return (
     <header className="relative z-10 mx-auto max-w-7xl px-6 py-6 flex items-center justify-between">
       {/* Logo */}
-      <Image src="/logo.svg" alt="SysGO" width={120} height={40} priority />
+      <Image src="/logo.png" alt="SysGO" width={120} height={40} priority />
 
       {/* Nav Links */}
       <nav className="hidden lg:flex items-center gap-8 text-sm font-medium text-gray-600">
-        <Link href="#" className="hover:text-[#0d3b35] transition-colors">Início</Link>
-        <Link href="#" className="hover:text-[#0d3b35] transition-colors">Serviços</Link>
-        <Link href="#" className="hover:text-[#0d3b35] transition-colors">Sistemas</Link>
-        <Link href="#" className="hover:text-[#0d3b35] transition-colors">Depoimentos</Link>
-        <Link href="#" className="hover:text-[#0d3b35] transition-colors">Contato</Link>
+        <Link href="/" className="hover:text-[#0d3b35] transition-colors">Início</Link>
+        <Link href="/servicos" className="hover:text-[#0d3b35] transition-colors">Serviços</Link>
+        <Link href="/sistemas" className="hover:text-[#0d3b35] transition-colors">Sistemas</Link>
+        <Link href="/depoimentos" className="hover:text-[#0d3b35] transition-colors">Depoimentos</Link>
+        <Link href="/contato" className="hover:text-[#0d3b35] transition-colors">Contato</Link>
       </nav>
 
       {/* Buttons */}
