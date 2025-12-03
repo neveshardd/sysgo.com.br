@@ -1,5 +1,3 @@
-import { Zap } from "lucide-react";
-
 export default function ContatoHero() {
   return (
     <section className="relative pt-16 pb-20 lg:pt-24 lg:pb-32 px-6 overflow-hidden">
