@@ -60,7 +60,7 @@ export default function TestimonialsSection() {
                 </div>
               </div>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                "{testimonial.text}"
+                &ldquo;{testimonial.text}&rdquo;
               </p>
               <div className="inline-block">
                 <span className="text-xs font-semibold px-3 py-1.5 bg-gray-100 rounded-full text-[#0d3b35] border border-gray-200">

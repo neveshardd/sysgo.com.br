@@ -1,10 +1,11 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navbar() {
   return (
     <header className="relative z-10 mx-auto max-w-7xl px-6 py-6 flex items-center justify-between">
       {/* Logo */}
-      <img src="/logo.svg" alt="SysGO" />
+      <Image src="/logo.svg" alt="SysGO" width={120} height={40} priority />
 
       {/* Nav Links */}
       <nav className="hidden lg:flex items-center gap-8 text-sm font-medium text-gray-600">

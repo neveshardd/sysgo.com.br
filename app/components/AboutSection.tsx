@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function AboutSection() {
   return (
     <section className="relative z-10 max-w-7xl mx-auto px-6 py-24 lg:py-32 bg-[#fcfdfd]">
@@ -19,8 +21,8 @@ export default function AboutSection() {
           </div>
         </div>
         <div className="relative">
-          <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-            <img src="/section2-image.jpg" alt="Rotina leve" className="w-full h-auto object-cover" />
+          <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-w-16 aspect-h-9"> {/* Added aspect ratio for better fill behavior */}
+            <Image src="/section2-image.jpg" alt="Rotina leve" fill className="object-cover" />
           </div>
         </div>
       </div>
