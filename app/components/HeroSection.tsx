@@ -13,8 +13,16 @@ export default function HeroSection() {
         }}
       ></div>
 
-      {/* Radial Gradient to fade grid at edges */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_10%,#fcfdfd_85%)] pointer-events-none"></div>
+      {/* Linear Gradient Mask - Fades grid at all edges */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background: `
+            linear-gradient(to right, #fcfdfd 0%, transparent 30%, transparent 85%, #fcfdfd 100%),
+            linear-gradient(to bottom, #fcfdfd 0%, transparent 30%, transparent 85%, #fcfdfd 100%)
+          `
+        }}
+      ></div>
 
       <main className="relative z-10 flex flex-col items-center justify-center pt-20 pb-32 px-6 text-center max-w-5xl mx-auto">
         {/* Badge */}

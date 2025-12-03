@@ -10,8 +10,16 @@ export default function SystemsSection() {
         }}
       ></div>
 
-      {/* Radial Gradient to fade grid at edges */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_10%,#fcfdfd_85%)] pointer-events-none"></div>
+      {/* Linear Gradient Mask - Fades grid at all edges */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background: `
+            linear-gradient(to right, #fcfdfd 0%, transparent 50%, transparent 85%, #fcfdfd 100%),
+            linear-gradient(to bottom, #fcfdfd 0%, transparent 60%, transparent 85%, #fcfdfd 100%)
+          `
+        }}
+      ></div>
 
       {/* Green shadow/glow */}
       <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_center,rgba(13,59,53,0.08)_0%,transparent_70%)]"></div>
