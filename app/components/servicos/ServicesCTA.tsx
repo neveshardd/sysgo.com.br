@@ -9,7 +9,7 @@ export default function ServicesCTA() {
         }}>
       </div>
 
-      <div className="max-w-4xl mx-auto relative z-10">
+      <div className="max-w-3xl mx-auto relative z-10">
         <h2 className="text-3xl md:text-5xl font-semibold text-white mb-6 leading-tight">
           Você não precisa acreditar. Só precisa testar
         </h2>

@@ -30,7 +30,7 @@ export default function ServicesFeatureHighlight() {
             A verdade é que, quanto mais você tenta dar conta de tudo, menos tempo sobra para fazer sua empresa crescer.
           </p>
           <p>
-            Com o Map-OS, você ganha clareza, controle e tempo.
+            Com o Map-OS, você ganha <span className="font-semibold">clareza, controle e tempo.</span>
           </p>
         </div>
       </div>

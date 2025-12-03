@@ -1,73 +1,112 @@
-import { Check } from "lucide-react";
+import { CheckCircle2, FileText, Gem, Wrench } from "lucide-react";
 
 const plans = [
   {
-    name: "Básico",
-    price: "R$ 97",
-    period: "/mês",
-    description: "Para quem está começando a organizar a empresa.",
-    features: ["Gestão de OS ilimitada", "Cadastro de Clientes", "Controle de Estoque Básico", "1 Usuário"],
+    title: "Instância MAP-OS",
+    description: "Pensado para todos os tipos de Varejo e Distribuidoras",
+    badge: "Padrão",
+    icon: FileText,
+    features: [
+      "Acesso Completo ao MAP-OS com Ordens de Serviço, Vendas, Clientes, Produtos, Relatórios e mais.",
+      "Servidor Dedicado em SP, com subdomínio e SSL incluídos.",
+      "Usuários Ilimitados e 5GB de Armazenamento.",
+      "Suporte Especializado"
+    ],
+    highlight: false
   },
   {
-    name: "Profissional",
-    price: "R$ 197",
-    period: "/mês",
-    description: "O plano ideal para empresas em crescimento.",
-    highlight: true,
-    features: ["Tudo do Básico", "Financeiro Completo", "Emissão de Boletos e NFe", "3 Usuários", "Suporte Prioritário via WhatsApp"],
+    title: "MAP-OS Premium",
+    description: "Ideal para técnicos e assistências em geral",
+    badge: "Novidade",
+    icon: Gem,
+    features: [
+      "Todos os recursos do plano Instância MAP-OS, com melhorias de desempenho e usabilidade",
+      "Relatórios Avançados e Financeiro Detalhado para tomada de decisão estratégica.",
+      "Integrações com ferramentas externas como Google Agenda, WhatsApp e CRMs.",
+      "Dashboard Personalizado por Perfil de Usuário (administrador, técnico, cliente, etc)."
+    ],
+    highlight: true
   },
   {
-    name: "Empresarial",
-    price: "Sob Consulta",
-    period: "",
-    description: "Para grandes operações que precisam de escala.",
-    features: ["Tudo do Profissional", "API de Integração", "Gestão Multi-lojas", "Usuários Ilimitados", "Gerente de Conta Dedicado"],
+    title: "Personalização MAP-OS",
+    description: "Hospedagem em nuvem com preço competitivo",
+    badge: "Personalizado",
+    icon: Wrench,
+    features: [
+      "Funcionalidades desenvolvidas conforme sua necessidade",
+      "Layout e Interface Visual Personalizados",
+      "Ajustes de Fluxos e Campos, adicionando ou removendo etapas, formulários, módulos",
+      "Equipe de Desenvolvimento dedicada"
+    ],
+    highlight: false
   },
 ];
 
 export default function ServicesPricing() {
   return (
-    <section className="py-24 px-6 max-w-7xl mx-auto">
-      <div className="text-center mb-16">
-        <h2 className="text-3xl md:text-4xl font-semibold text-[#0d3b35] mb-4">
+    <section className="py-24 px-6 max-w-7xl mx-auto relative overflow-hidden">
+      {/* Grid Background */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          backgroundImage: `linear-gradient(to right, rgba(0,0,0,0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(0,0,0,0.05) 1px, transparent 1px)`,
+          backgroundSize: '4rem 4rem'
+        }}
+      ></div>
+
+      {/* Radial Gradient Mask */}
+      <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_center,transparent_0%,#fcfdfd_80%)]"></div>
+
+      {/* Green Glow Effect - Intensified */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#1BE000]/20 rounded-full blur-[120px] pointer-events-none -z-10"></div>
+
+      <div className="text-center mb-16 relative z-10">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#0d3b35] mb-4">
           Planos de Gestão de Ordens de Serviço
         </h2>
-        <p className="text-gray-600 text-lg">Escolha o plano ideal para o momento do seu negócio</p>
       </div>
 
-      <div className="grid md:grid-cols-3 gap-8 items-start">
+      <div className="grid md:grid-cols-3 gap-8 items-start relative z-10">
         {plans.map((plan, index) => (
           <div
             key={index}
-            className={`p-8 rounded-2xl border ${plan.highlight ? 'border-[#0d3b35] shadow-2xl relative scale-105 z-10' : 'border-gray-200 hover:border-gray-300'} bg-white transition-all`}
+            className={`p-8 rounded-2xl border flex flex-col h-full transition-all ${plan.highlight
+              ? 'bg-[#f0fdf9] border-[#0d3b35] shadow-xl md:scale-105 z-10'
+              : 'bg-[#f8f9fa] border-gray-200 hover:shadow-md'
+              }`}
           >
-            {plan.highlight && (
-              <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#0d3b35] text-white px-4 py-1 rounded-full text-sm font-semibold shadow-md">
-                Mais Popular
-              </div>
-            )}
-            <h3 className="text-xl font-semibold text-[#0d3b35] mb-2">{plan.name}</h3>
-            <div className="flex items-baseline gap-1 mb-4">
-              <span className="text-4xl font-semibold text-[#0d3b35]">{plan.price}</span>
-              <span className="text-gray-500 font-medium">{plan.period}</span>
+            <div className="flex justify-between items-start mb-8 gap-4">
+              <p className="text-sm text-gray-600 leading-snug max-w-[180px]">
+                {plan.description}
+              </p>
+              <span className={`text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider whitespace-nowrap ${plan.highlight
+                ? 'bg-white border border-[#0d3b35] text-[#0d3b35]'
+                : 'bg-white border border-gray-200 text-gray-600'
+                }`}>
+                {plan.badge}
+              </span>
             </div>
-            <p className="text-gray-600 mb-8 text-sm leading-relaxed min-h-[40px]">{plan.description}</p>
 
-            <div className="w-full h-px bg-gray-100 mb-8"></div>
+            <div className="mb-6 text-[#0d3b35]">
+              <plan.icon className="w-6 h-6 stroke-[1.5]" />
+            </div>
 
-            <ul className="space-y-4 mb-8">
+            <h3 className="text-2xl font-bold text-[#0d3b35] mb-8">{plan.title}</h3>
+
+            <ul className="space-y-4 mb-10 grow">
               {plan.features.map((feature, i) => (
                 <li key={i} className="flex items-start gap-3 text-sm text-gray-600">
-                  <div className="bg-green-100 rounded-full p-1 mt-0.5">
-                    <Check className="w-3 h-3 text-[#0d3b35] shrink-0" />
-                  </div>
-                  {feature}
+                  <CheckCircle2 className="w-5 h-5 text-[#0d3b35] shrink-0 stroke-[1.5]" />
+                  <span className="leading-relaxed">{feature}</span>
                 </li>
               ))}
             </ul>
 
-            <button className={`w-full cursor-pointer py-3 rounded-lg font-semibold transition-all ${plan.highlight ? 'bg-[#0d3b35] text-white hover:bg-[#0a2e2a] shadow-lg' : 'bg-gray-100 text-[#0d3b35] hover:bg-gray-200'}`}>
-              {plan.highlight ? 'Começar Agora' : 'Falar com Consultor'}
+            <button className={`w-full cursor-pointer py-3.5 rounded-xl font-bold text-sm transition-all ${plan.highlight
+              ? 'bg-[#0d3b35] text-white hover:bg-[#0a2e2a] shadow-lg'
+              : 'bg-[#f0f2f2] text-[#0d3b35] hover:bg-[#e1e4e4]'
+              }`}>
+              Ver mais detalhes
             </button>
           </div>
         ))}
