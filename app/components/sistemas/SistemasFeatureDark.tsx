@@ -12,7 +12,7 @@ export default function SistemasFeatureDark() {
                 alt="Analytics Dashboard"
                 width={600}
                 height={400}
-                className="w-full h-auto drop-shadow-2xl rounded-lg"
+                className="w-full h-auto rounded-2xl"
               />
             </div>
           </div>
@@ -20,10 +20,10 @@ export default function SistemasFeatureDark() {
             <h2 className="text-3xl md:text-4xl font-semibold mb-6">Por que isso importa?</h2>
             <div className="space-y-6 text-gray-300 leading-relaxed">
               <p>
-                Sem complicações, sem letras miúdas e com atendimento que resolve.
+                Sem um site profissional, seu negócio perde credibilidade e visibilidade.
               </p>
               <p>
-                Foque no seu negócio enquanto cuidamos da sua estrutura online.
+                Na SysGO, você não precisa ser técnico para ter um site confiável.
               </p>
             </div>
           </div>
