@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function TestimonialsSection() {
+export default function SharedTestimonials() {
   const testimonials = [
     {
       name: "Guilherme Fernandes",

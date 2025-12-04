@@ -1,6 +1,6 @@
-import { PenTool, FileText, Package, UserCheck } from "lucide-react";
+import { PenTool, FileText, Package, UserCheck, Pen, PanelBottom } from "lucide-react";
 
-export default function DepoimentosSteps() {
+export default function PersonalizadoSteps() {
   return (
     <section className="py-24 bg-[#fbfbfb]">
       <div className="max-w-7xl mx-auto px-6">
@@ -14,7 +14,7 @@ export default function DepoimentosSteps() {
           {/* Step 1 */}
           <div className="p-8 rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-md transition-all h-full">
             <div className="w-12 h-12 mb-6 text-[#0d3b35]">
-              <PenTool className="w-8 h-8 stroke-[1.5]" />
+              <Pen className="w-8 h-8 stroke-[1.5]" />
             </div>
             <span className="block text-2xl font-semibold text-[#0d3b35] mb-2">1.</span>
             <h3 className="text-lg font-medium text-gray-600">Briefing técnico alinhado</h3>
@@ -32,7 +32,7 @@ export default function DepoimentosSteps() {
           {/* Step 3 */}
           <div className="p-8 rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-md transition-all h-full">
             <div className="w-12 h-12 mb-6 text-[#0d3b35]">
-              <Package className="w-8 h-8 stroke-[1.5]" />
+              <PanelBottom className="w-8 h-8 stroke-[1.5]" />
             </div>
             <span className="block text-2xl font-semibold text-[#0d3b35] mb-2">3.</span>
             <h3 className="text-lg font-medium text-gray-600">Sistema entregue com manual</h3>

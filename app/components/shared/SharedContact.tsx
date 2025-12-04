@@ -1,6 +1,6 @@
 import { Sparkle, Star, StarHalf, Stars } from "lucide-react";
 
-export default function ContactSection() {
+export default function SharedContact() {
   return (
     <section className="relative py-24 lg:py-32 bg-[#0d3b35] text-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
@@ -36,7 +36,10 @@ export default function ContactSection() {
               <div>
                 <input
                   type="text"
+                  id="contact-name"
+                  name="name"
                   placeholder="Nome"
+                  autoComplete="name"
                   className="w-full px-4 py-3 rounded-xl border border-gray-200 text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#0d3b35] focus:border-transparent"
                 />
               </div>
@@ -44,13 +47,18 @@ export default function ContactSection() {
               <div>
                 <input
                   type="tel"
+                  id="contact-phone"
+                  name="phone"
                   placeholder="Telefone Whatsapp"
+                  autoComplete="tel"
                   className="w-full px-4 py-3 rounded-xl border border-gray-200 text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#0d3b35] focus:border-transparent"
                 />
               </div>
 
               <div>
                 <textarea
+                  id="contact-message"
+                  name="message"
                   placeholder="Digite sua mensagem..."
                   rows={6}
                   className="w-full px-4 py-3 rounded-xl border border-gray-200 text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#0d3b35] focus:border-transparent resize-none"

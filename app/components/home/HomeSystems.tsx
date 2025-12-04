@@ -1,6 +1,6 @@
 import { Database, Tag, HandHelping, Cloud, Laptop } from "lucide-react";
 
-export default function SystemsSection() {
+export default function HomeSystems() {
   return (
     <section className="relative z-10 py-24 lg:py-32 bg-[#fcfdfd] overflow-hidden">
       {/* Grid Background */}

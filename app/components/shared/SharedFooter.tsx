@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export default function Footer() {
+export default function SharedFooter() {
   return (
     <footer className="bg-[#f5f7f8] border-t border-gray-200">
       <div className="max-w-7xl mx-auto px-6 py-12">
@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Logo and Address */}
           <div className="flex-1">
             <div className="flex items-center gap-3 mb-6">
-              <Image src="/logo-icon.png" alt="SysGO" width={40} height={40} className="flex-shrink-0" />
+              <img src="/logo-icon.png" alt="SysGO" width="40" height="40" className="flex-shrink-0" />
               <div className="flex flex-col leading-none">
                 <span className="font-semibold text-xl tracking-tight text-[#0d3b35]">SysGO</span>
                 <span className="text-[10px] text-gray-500 font-medium tracking-wide">Soluções que simplificam</span>
@@ -24,19 +24,17 @@ export default function Footer() {
           {/* Right Side - Navigation and Badges */}
           <div className="flex flex-col items-end gap-6">
             {/* Navigation Links */}
-            <nav className="flex flex-wrap gap-x-8 gap-y-2 justify-end">
-              <Link href="/" className="text-sm text-gray-600 hover:text-[#0d3b35] transition-colors">Início</Link>
-              <Link href="/servicos" className="text-sm text-gray-600 hover:text-[#0d3b35] transition-colors">Serviços</Link>
-              <Link href="/sistemas" className="text-sm text-gray-600 hover:text-[#0d3b35] transition-colors">Sistemas</Link>
-              <Link href="/depoimentos" className="text-sm text-gray-600 hover:text-[#0d3b35] transition-colors">Depoimentos</Link>
-              <Link href="/quem-somos" className="text-sm text-gray-600 hover:text-[#0d3b35] transition-colors">Quem somos</Link>
-              <Link href="/contato" className="text-sm text-gray-600 hover:text-[#0d3b35] transition-colors">Contato</Link>
+            <nav className="flex gap-x-8 gap-y-2 justify-end">
+              <Link href="/" className="text-xs text-gray-600 hover:text-[#0d3b35] transition-colors">Início</Link>
+              <Link href="/servicos" className="text-xs text-gray-600 hover:text-[#0d3b35] transition-colors">Serviços</Link>
+              <Link href="/hospedagem" className="text-xs text-gray-600 hover:text-[#0d3b35] transition-colors">Hospedagem</Link>
+              <Link href="/personalizado" className="text-xs text-gray-600 hover:text-[#0d3b35] transition-colors">Personalizado</Link>
             </nav>
 
             {/* Security Badges */}
             <div className="flex items-center gap-3">
-              <Image src="/norton-icon.svg" alt="Norton Secured" width={80} height={40} className="object-contain" />
-              <Image src="/ssl-icon.svg" alt="SSL Secured" width={60} height={40} className="object-contain" />
+              <img src="/norton-icon.svg" alt="Norton Secured" className="h-10 w-auto object-contain" />
+              <img src="/ssl-icon.svg" alt="SSL Secured" className="h-10 w-auto object-contain" />
             </div>
           </div>
         </div>

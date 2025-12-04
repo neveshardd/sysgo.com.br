@@ -1,4 +1,4 @@
-export default function GridBackground() {
+export default function SharedGridBackground() {
   return (
     <>
       {/* Grid Background */}

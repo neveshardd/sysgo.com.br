@@ -1,25 +1,25 @@
 import Image from "next/image";
 
-export default function DepoimentosHero() {
+export default function PersonalizadoHero() {
   return (
-    <section className="pt-12 pb-20 lg:pt-20 lg:pb-32 overflow-hidden bg-[#fbfbfb]">
+    <section className="pt-12 lg:pt-20 lg:pb-0 overflow-hidden bg-[#fbfbfb]">
       <div className="max-w-7xl mx-auto px-6 text-center">
-        <div className="max-w-4xl mx-auto mb-12">
+        <div className="max-w-3xl mx-auto mb-12">
           <h1 className="text-4xl lg:text-5xl font-semibold text-[#0d3b35] leading-tight mb-6">
             Sistema sob medida, do jeito que sua empresa precisa
           </h1>
-          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+          <p className="text-sm text-gray-600 mb-8 max-w-3xl mx-auto">
             Projetamos soluções personalizadas para empresas que precisam de mais do que uma plataforma genérica.
           </p>
           <button className="px-8 py-3 cursor-pointer bg-[#0d3b35] text-white rounded-lg font-semibold hover:bg-[#0a2e2a] transition-all shadow-lg">
-            Teste grátis por 7 dias
+            Contrate Agora
           </button>
         </div>
 
         <div className="relative max-w-5xl mx-auto">
-          <div className="relative z-10 rounded-xl overflow-hidden shadow-2xl border border-gray-200 bg-white">
+          <div className="relative z-10 overflow-hidden bg-white">
             <Image
-              src="/depoiments/dash-mockup.png"
+              src="/depoiments/dash-mockup.svg"
               alt="Dashboard do Sistema"
               width={1200}
               height={800}

@@ -1,12 +1,12 @@
-import Navbar from "../components/shared/Navbar";
-import Footer from "../components/shared/Footer";
-import TestimonialsSection from "../components/shared/TestimonialsSection";
-import ContactSection from "../components/shared/ContactSection";
+import Navbar from "../components/shared/SharedNavbar";
+import Footer from "../components/shared/SharedFooter";
+import ContactSection from "../components/shared/SharedContact";
 import SistemasHero from "../components/sistemas/SistemasHero";
 import SistemasFeatureDark from "../components/sistemas/SistemasFeatureDark";
 import SistemasGrid from "../components/sistemas/SistemasGrid";
 import SistemasPricing from "../components/sistemas/SistemasPricing";
 import SistemasAppDownload from "../components/sistemas/SistemasAppDownload";
+import SharedTestimonials from "../components/shared/SharedTestimonials";
 
 export default function SistemasPage() {
   return (
@@ -17,7 +17,7 @@ export default function SistemasPage() {
       <SistemasGrid />
       <SistemasPricing />
       <SistemasAppDownload />
-      <TestimonialsSection />
+      <SharedTestimonials />
       <ContactSection />
       <Footer />
     </main>

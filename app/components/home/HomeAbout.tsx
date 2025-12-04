@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-export default function AboutSection() {
+export default function HomeAbout() {
   return (
     <section className="relative z-10 max-w-7xl mx-auto px-6 py-24 lg:py-32 bg-[#fcfdfd]">
       <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">

@@ -1,4 +1,4 @@
-export default function DepoimentosContact() {
+export default function PersonalizadoContact() {
   return (
     <section className="py-24 bg-[#f8f9fa]">
       <div className="max-w-7xl mx-auto px-6">
@@ -12,31 +12,42 @@ export default function DepoimentosContact() {
             </p>
           </div>
 
-          <div className="bg-[#1a4d44] rounded-3xl p-8 lg:p-10 shadow-2xl">
+          <div className="bg-[#1a4d44] rounded-xl p-8 lg:p-10 shadow-2xl rounded-tr-[72px]">
             <form className="space-y-5">
               <div>
                 <input
                   type="text"
+                  id="personalizado-name"
+                  name="name"
                   placeholder="Nome"
+                  autoComplete="name"
                   className="w-full px-4 py-3 rounded-lg bg-[#143d36] border border-[#2a665b] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#4d8f82] focus:border-transparent transition-all"
                 />
               </div>
               <div>
                 <input
                   type="tel"
+                  id="personalizado-phone"
+                  name="phone"
                   placeholder="Telefone (Whatsapp)"
+                  autoComplete="tel"
                   className="w-full px-4 py-3 rounded-lg bg-[#143d36] border border-[#2a665b] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#4d8f82] focus:border-transparent transition-all"
                 />
               </div>
               <div>
                 <input
                   type="email"
+                  id="personalizado-email"
+                  name="email"
                   placeholder="E-mail"
+                  autoComplete="email"
                   className="w-full px-4 py-3 rounded-lg bg-[#143d36] border border-[#2a665b] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#4d8f82] focus:border-transparent transition-all"
                 />
               </div>
               <div>
                 <textarea
+                  id="personalizado-message"
+                  name="message"
                   placeholder="O que deseja melhorar..."
                   rows={4}
                   className="w-full px-4 py-3 rounded-lg bg-[#143d36] border border-[#2a665b] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#4d8f82] focus:border-transparent resize-none transition-all"

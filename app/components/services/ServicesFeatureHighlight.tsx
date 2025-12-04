@@ -10,6 +10,7 @@ export default function ServicesFeatureHighlight() {
               src="/services/section-image.jpg"
               alt="Gestão eficiente com SysGo"
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover"
             />
             {/* Overlay gradient */}

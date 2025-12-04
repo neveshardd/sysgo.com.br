@@ -1,7 +1,7 @@
 import { Zap } from "lucide-react";
 import Link from "next/link";
 
-export default function HeroSection() {
+export default function HomeHero() {
   return (
     <section className="relative">
       {/* Grid Background */}

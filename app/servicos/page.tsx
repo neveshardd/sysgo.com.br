@@ -1,12 +1,12 @@
-import Navbar from "../components/shared/Navbar";
-import Footer from "../components/shared/Footer";
-import ServicesHero from "../components/servicos/ServicesHero";
-import ServicesFeatureHighlight from "../components/servicos/ServicesFeatureHighlight";
-import ServicesGrid from "../components/servicos/ServicesGrid";
-import ServicesCTA from "../components/servicos/ServicesCTA";
-import ServicesPricing from "../components/servicos/ServicesPricing";
-import ServicesFAQ from "../components/servicos/ServicesFAQ";
-import ContactSection from "../components/shared/ContactSection";
+import Navbar from "../components/shared/SharedNavbar";
+import Footer from "../components/shared/SharedFooter";
+import ServicesHero from "../components/services/ServicesHero";
+import ServicesFeatureHighlight from "../components/services/ServicesFeatureHighlight";
+import ServicesGrid from "../components/services/ServicesGrid";
+import ServicesCTA from "../components/services/ServicesCTA";
+import ServicesPricing from "../components/services/ServicesPricing";
+import ServicesFAQ from "../components/services/ServicesFAQ";
+import ContactSection from "../components/shared/SharedContact";
 
 export default function Services() {
   return (

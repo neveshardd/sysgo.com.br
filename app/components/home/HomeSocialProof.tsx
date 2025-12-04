@@ -1,4 +1,4 @@
-export default function SocialProof() {
+export default function HomeSocialProof() {
   return (
     <footer className="relative z-10 max-w-7xl mx-auto px-6 pb-20">
       <div className="flex flex-col lg:flex-row items-center justify-between gap-10 pt-12">

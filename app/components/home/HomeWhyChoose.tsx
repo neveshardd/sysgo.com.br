@@ -1,4 +1,4 @@
-export default function WhyChooseSection() {
+export default function HomeWhyChoose() {
   return (
     <section className="relative py-24 lg:py-24 bg-[#0d3b35] text-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
@@ -6,7 +6,7 @@ export default function WhyChooseSection() {
           Por que escolher a SysGO?
         </h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-12">
           {/* Card 1 */}
           <div className="bg-[#0d3b35] border border-white/10 rounded-2xl p-8 transition-colors">
             <div className="mb-8">

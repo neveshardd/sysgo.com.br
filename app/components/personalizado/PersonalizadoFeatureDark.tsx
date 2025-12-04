@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function DepoimentosFeatureDark() {
+export default function PersonalizadoFeatureDark() {
   return (
     <section className="py-20 bg-[#0d3b35] text-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
