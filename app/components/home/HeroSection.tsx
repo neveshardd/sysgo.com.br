@@ -26,7 +26,7 @@ export default function HeroSection() {
 
       <main className="relative z-10 flex flex-col items-center justify-center pt-20 pb-32 px-6 text-center max-w-5xl mx-auto">
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-gray-200 mb-10 cursor-default">
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 shadow-sm rounded-full bg-white border border-gray-200 mb-10 cursor-default">
           <span className="text-[#0d3b35]">
             <Zap className="w-3 h-3" />
           </span>
@@ -49,7 +49,7 @@ export default function HeroSection() {
           <Link href="#" className="w-full sm:w-auto px-8 py-4 text-base font-semibold text-white bg-[#0d3b35] rounded-lg hover:bg-[#0a2e2a] transition-all hover:-translate-y-1">
             Contrate Agora
           </Link>
-          <Link href="#" className="w-full sm:w-auto px-8 py-4 text-base font-semibold text-[#0d3b35] bg-[#f0f2f2] rounded-lg hover:bg-[#e1e4e4] transition-all hover:-translate-y-1">
+          <Link href="#" className="w-full sm:w-auto px-8 py-4 text-base border border-gray-200 font-semibold text-[#0d3b35] bg-white shadow-xl rounded-xl transition-all">
             Entrar em contato
           </Link>
         </div>

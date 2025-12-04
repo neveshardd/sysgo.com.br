@@ -1,4 +1,4 @@
-import { Database, Tag, HandHelping } from "lucide-react";
+import { Database, Tag, HandHelping, Cloud, Laptop } from "lucide-react";
 
 export default function SystemsSection() {
   return (
@@ -33,8 +33,8 @@ export default function SystemsSection() {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-20">
           <h2 className="text-3xl md:text-4xl font-semibold text-[#0d3b35] mb-6">Nossos Sistemas</h2>
-          <p className="text-sm md:text-base text-gray-600 max-w-2xl mx-auto leading-relaxed">
-            Nossos sistemas tornam a gestão do negócio mais acessível e simplificada, sendo ferramentas essenciais para impulsionar seu crescimento no mercado.
+          <p className="text-sm md:text-base text-gray-600 max-w-xl mx-auto leading-relaxed">
+            Tornam a gestão do negócio mais acessível e simplificada, essencial para impulsionar seu crescimento no mercado.
           </p>
         </div>
 
@@ -42,18 +42,18 @@ export default function SystemsSection() {
           {/* Card 1 */}
           <div className="bg-[#f8f9fa] rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition-shadow flex flex-col h-full">
             <div className="flex justify-between items-start mb-8">
-              <span className="text-sm font-medium text-gray-600 max-w-[160px] leading-snug">Sua presença digital sem dor de cabeça</span>
+              <span className="text-sm font-medium text-gray-600 max-w-[160px] leading-snug">Presença online 24 horas</span>
               <span className="text-[10px] font-semibold px-3 py-1 bg-white border border-gray-200 rounded-full text-gray-600 uppercase tracking-wider">WEB</span>
             </div>
             <div className="mb-6 text-[#0d3b35]">
-              <Tag className="w-6 h-6 rotate-90" />
+              <Cloud className="w-6 h-6" />
             </div>
             <h3 className="text-2xl font-semibold text-[#0d3b35] mb-4">Hospedagem de sites</h3>
             <div className="w-full h-px bg-gray-200 mb-6"></div>
             <p className="text-sm text-gray-600 mb-8 leading-relaxed grow">
-              Hospedagem, domínio, painel e suporte — tudo configurado e pronto para sua empresa aparecer com estrutura profissional.
+              Seu negócio online com quem entende do assunto, com segurança, estabilidade, suporte e transparência.
             </p>
-            <button className="w-full cursor-pointer py-3.5 rounded-xl bg-[#f0f2f2] hover:bg-[#e1e4e4] text-[#0d3b35] font-semibold text-sm transition-colors">
+            <button className="w-full cursor-pointer py-3.5 rounded-xl shadow-xl border border-gray-200 text-[#0d3b35] font-semibold text-sm transition-colors">
               Ver mais detalhes
             </button>
           </div>
@@ -62,7 +62,7 @@ export default function SystemsSection() {
           <div className="rounded-2xl p-[1.2px] bg-[linear-gradient(to_bottom,var(--color-teal-200),var(--color-teal-600),var(--color-teal-200),var(--color-teal-600))] relative flex flex-col h-full md:scale-105 z-10">
             <div className="bg-[#f8fcfb] rounded-2xl p-8 flex flex-col h-full w-full">
               <div className="flex justify-between items-start mb-8">
-                <span className="text-sm font-medium text-gray-600 max-w-[100px] leading-snug">Controle de ordens de serviço sem papelada</span>
+                <span className="text-sm font-medium text-gray-600 max-w-[100px] leading-snug">Controle sem papelada</span>
                 <div className="rounded-full p-[1.5px] bg-[linear-gradient(to_bottom,var(--color-teal-200),var(--color-teal-600),var(--color-teal-200),var(--color-teal-600))]">
                   <span className="block text-[10px] font-semibold px-3 py-1 bg-white rounded-full text-[#0d3b35] uppercase tracking-wider">GESTÃO</span>
                 </div>
@@ -73,7 +73,7 @@ export default function SystemsSection() {
               <h3 className="text-2xl font-semibold text-[#0d3b35] mb-4">Map-OS</h3>
               <div className="w-full h-px bg-[#0d3b35]/10 mb-6"></div>
               <p className="text-sm text-gray-600 mb-8 leading-relaxed grow">
-                Organize sua assistência técnica ou operação de campo em um só lugar, com alertas automáticos, histórico de clientes, notificações e cobranças integradas.
+                Organize seus atendimentos em um só lugar, com alertas automáticos, histórico de chamados e financeiro totalmente integrado.
               </p>
               <button className="w-full cursor-pointer py-3.5 rounded-xl bg-[#0d3b35] hover:bg-[#0a2e2a] text-white font-semibold text-sm transition-colors shadow-lg">
                 Ver mais detalhes
@@ -84,18 +84,18 @@ export default function SystemsSection() {
           {/* Card 3 */}
           <div className="bg-[#f8f9fa] rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition-shadow flex flex-col h-full">
             <div className="flex justify-between items-start mb-8">
-              <span className="text-sm font-medium text-gray-600 max-w-[160px] leading-snug">Sistemas sob medida para o seu negócio</span>
+              <span className="text-sm font-medium text-gray-600 max-w-[160px] leading-snug">Tudo à mão</span>
               <span className="text-[10px] font-semibold px-3 py-1 bg-white border border-gray-200 rounded-full text-gray-600 uppercase tracking-wider">SOB-MEDIDA</span>
             </div>
             <div className="mb-6 text-[#0d3b35]">
-              <Database className="w-6 h-6" />
+              <Laptop className="w-6 h-6" />
             </div>
             <h3 className="text-2xl font-semibold text-[#0d3b35] mb-4">Painel Personalizado</h3>
             <div className="w-full h-px bg-gray-200 mb-6"></div>
             <p className="text-sm text-gray-600 mb-8 leading-relaxed grow">
               Criamos soluções exclusivas para empresas que precisam de um sistema específico, funcional e com suporte técnico ágil.
             </p>
-            <button className="w-full cursor-pointer py-3.5 rounded-xl bg-[#f0f2f2] hover:bg-[#e1e4e4] text-[#0d3b35] font-semibold text-sm transition-colors">
+            <button className="w-full cursor-pointer py-3.5 rounded-xl shadow-xl border border-gray-200 text-[#0d3b35] font-semibold text-sm transition-colors">
               Ver mais detalhes
             </button>
           </div>

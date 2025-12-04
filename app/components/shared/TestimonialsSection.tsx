@@ -73,7 +73,7 @@ export default function TestimonialsSection() {
 
         <div className="text-center">
           <button className="px-8 py-3 cursor-pointer bg-[#0d3b35] text-white rounded-lg font-semibold hover:bg-[#0a2e2a] transition-colors">
-            Testar agora por 7 dias grátis
+            Contrate Agora
           </button>
         </div>
       </div>

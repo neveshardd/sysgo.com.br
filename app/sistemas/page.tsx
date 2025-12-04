@@ -10,7 +10,7 @@ import SistemasAppDownload from "../components/sistemas/SistemasAppDownload";
 
 export default function SistemasPage() {
   return (
-    <main className="min-h-screen bg-[#f8f9fa]">
+    <main className="bg-[#f8f9fa]">
       <Navbar />
       <SistemasHero />
       <SistemasFeatureDark />

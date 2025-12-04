@@ -1,3 +1,5 @@
+import { Sparkle, Star, StarHalf, Stars } from "lucide-react";
+
 export default function ContactSection() {
   return (
     <section className="relative py-24 lg:py-32 bg-[#0d3b35] text-white overflow-hidden">
@@ -6,18 +8,14 @@ export default function ContactSection() {
           {/* Left Side - Info */}
           <div>
             <div className="mb-8">
-              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white mb-6">
-                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-                <polyline points="2 17 12 22 22 17"></polyline>
-                <polyline points="2 12 12 17 22 12"></polyline>
-              </svg>
+              <Sparkle strokeWidth={0.6} className="w-12 h-12" />
             </div>
 
             <h2 className="text-3xl md:text-4xl font-semibold mb-6">Fale Conosco</h2>
 
             <div className="space-y-4 mb-8 text-white/90 leading-relaxed">
               <p>
-                Envie-nos uma mensagem com elogios, dúvidas e sugestões, será um prazer saber sua opinião. Utilizando o formulário ao lado.
+                Gostaríamos de ouvir sua opinião, elogios ou dúvidas; será um prazer falar com você.
               </p>
               <p>
                 Para papo com um de nossos atendentes utilize o Chat Online no canto inferior direito ou clique no botão abaixo e seja direcionado a nosso atendimento via WhatsApp.
@@ -33,13 +31,13 @@ export default function ContactSection() {
           </div>
 
           {/* Right Side - Form */}
-          <div className="bg-white rounded-3xl p-8 lg:p-12 shadow-2xl">
+          <div className="bg-white rounded-xl p-8 lg:p-12 shadow-2xl">
             <form className="space-y-6">
               <div>
                 <input
                   type="text"
                   placeholder="Nome"
-                  className="w-full px-4 py-3 rounded-lg border border-gray-200 text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#0d3b35] focus:border-transparent"
+                  className="w-full px-4 py-3 rounded-xl border border-gray-200 text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#0d3b35] focus:border-transparent"
                 />
               </div>
 
@@ -47,7 +45,7 @@ export default function ContactSection() {
                 <input
                   type="tel"
                   placeholder="Telefone Whatsapp"
-                  className="w-full px-4 py-3 rounded-lg border border-gray-200 text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#0d3b35] focus:border-transparent"
+                  className="w-full px-4 py-3 rounded-xl border border-gray-200 text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#0d3b35] focus:border-transparent"
                 />
               </div>
 
@@ -55,13 +53,13 @@ export default function ContactSection() {
                 <textarea
                   placeholder="Digite sua mensagem..."
                   rows={6}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-200 text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#0d3b35] focus:border-transparent resize-none"
+                  className="w-full px-4 py-3 rounded-xl border border-gray-200 text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#0d3b35] focus:border-transparent resize-none"
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                className="w-full cursor-pointer py-4 bg-[#0d3b35] text-white rounded-lg font-semibold hover:bg-[#0a2e2a] transition-colors"
+                className="w-full cursor-pointer py-4 bg-[#0d3b35] text-white rounded-xl font-semibold hover:bg-[#0a2e2a] transition-colors"
               >
                 Enviar mensagem
               </button>

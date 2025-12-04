@@ -73,12 +73,6 @@ export default function WhyChooseSection() {
             </p>
           </div>
         </div>
-
-        <div className="text-center">
-          <button className="px-8 py-3 cursor-pointer bg-white text-[#0d3b35] rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-            Começar agora
-          </button>
-        </div>
       </div>
     </section>
   );
