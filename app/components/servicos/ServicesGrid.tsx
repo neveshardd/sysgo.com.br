@@ -1,4 +1,4 @@
-import { Hand, History, Wrench, Landmark, PieChart, BarChart3, Gem } from "lucide-react";
+import { Hand, SquareUser, Wrench, Landmark, PieChart, Gem, ChartArea } from "lucide-react";
 
 const features = [
   {
@@ -7,7 +7,7 @@ const features = [
     description: "Criação de ordens de serviço em segundos",
   },
   {
-    icon: History,
+    icon: SquareUser,
     title: "Histórico",
     description: "Histórico completo por cliente",
   },
@@ -29,7 +29,7 @@ const features = [
     description: "Relatórios simples para entender o que está funcionando",
   },
   {
-    icon: BarChart3,
+    icon: ChartArea,
     title: "Relatórios",
     description: "Relatórios simples para entender o que está funcionando",
   },
@@ -48,30 +48,34 @@ export default function ServicesGrid() {
         {features.map((feature, index) => (
           <div
             key={index}
-            className={`p-8 rounded-2xl border ${feature.highlight
+            className={`p-8 rounded-2xl border transition-all ${feature.highlight
               ? 'bg-[#f9eeb0] border-[#f9eeb0]'
               : 'bg-[#f8f9fa] border-gray-200'
               }`}
           >
-            <div className="flex items-start justify-between mb-6">
-              <div className="text-[#0d3b35]">
-                <feature.icon className="w-8 h-8 stroke-[1.5]" />
+            <div className="flex items-start gap-5">
+              <div className="text-[#0d3b35] shrink-0">
+                <feature.icon className="w-7 h-7 stroke-[1.5]" />
               </div>
-              {feature.highlight && (
-                <span className="bg-white flex items-center gap-1 text-[10px] font-bold px-3 py-1 rounded-full text-[#0d3b35] uppercase tracking-wider shadow-sm">
-                  <Gem className="w-3 h-3" /> {feature.badge}
-                </span>
-              )}
+              <div>
+                <div className="flex items-center gap-3 mb-2">
+                  <h3 className="text-xl font-bold text-[#0d3b35]">{feature.title}</h3>
+                  {feature.highlight && (
+                    <span className="bg-white flex items-center gap-1.5 text-[10px] font-bold px-3 py-1 rounded-full text-[#0d3b35] uppercase tracking-wider shadow-sm">
+                      <Gem className="w-3 h-3" /> {feature.badge}
+                    </span>
+                  )}
+                </div>
+                <p className="text-gray-600 text-sm leading-relaxed">{feature.description}</p>
+              </div>
             </div>
-            <h3 className="text-xl font-bold text-[#0d3b35] mb-3">{feature.title}</h3>
-            <p className="text-gray-600 text-sm leading-relaxed">{feature.description}</p>
           </div>
         ))}
       </div>
 
       <div className="mt-16 text-center">
         <button className="px-8 py-3 cursor-pointer bg-[#0d3b35] text-white font-semibold rounded-lg hover:bg-[#0a2e2a] transition-all shadow-md hover:shadow-lg text-sm">
-          Teste por 7 dias grátis
+          Contrate Agora
         </button>
       </div>
     </section>

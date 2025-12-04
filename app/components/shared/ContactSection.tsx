@@ -31,7 +31,7 @@ export default function ContactSection() {
           </div>
 
           {/* Right Side - Form */}
-          <div className="bg-white rounded-xl p-8 lg:p-12 shadow-2xl">
+          <div className="bg-white rounded-xl rounded-tr-[72px] p-8 lg:p-12 shadow-2xl">
             <form className="space-y-6">
               <div>
                 <input

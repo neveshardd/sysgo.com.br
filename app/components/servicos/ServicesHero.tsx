@@ -27,7 +27,7 @@ export default function ServicesHero() {
             O Map-OS é um sistema de ordem de serviço simples e intuitivo que te ajuda a acompanhar tudo, do pedido à entrega, sem depender de papel, WhatsApp ou memória.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center gap-6">
+          <div className="flex flex-col sm:flex-row items-start md:items-center gap-6">
             <Link href="#" className="px-8 py-4 text-base font-semibold text-white bg-[#0d3b35] rounded-xl hover:bg-[#0a2e2a] transition-all shadow-lg hover:shadow-xl cursor-pointer hover:-translate-y-1">
               Contrate agora
             </Link>
@@ -51,7 +51,7 @@ export default function ServicesHero() {
           {/* Image Container */}
           <div className="relative z-10 transform translate-y-4 md:translate-y-8 transition-transform duration-700">
             <Image
-              src="/services/mobile-mock.jpg"
+              src="/services/mobile-mock.svg"
               alt="Interface do Sistema SysGo no Celular"
               width={600}
               height={800}

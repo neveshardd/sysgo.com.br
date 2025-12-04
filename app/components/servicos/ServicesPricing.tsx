@@ -15,15 +15,15 @@ const plans = [
     highlight: false
   },
   {
-    title: "MAP-OS Premium",
-    description: "Ideal para técnicos e assistências em geral",
+    title: "Emissão de NF",
+    description: "Validação em tempo real",
     badge: "Novidade",
     icon: Gem,
     features: [
-      "Todos os recursos do plano Instância MAP-OS, com melhorias de desempenho e usabilidade",
-      "Relatórios Avançados e Financeiro Detalhado para tomada de decisão estratégica.",
-      "Integrações com ferramentas externas como Google Agenda, WhatsApp e CRMs.",
-      "Dashboard Personalizado por Perfil de Usuário (administrador, técnico, cliente, etc)."
+      "Emissão NFC-e/NF-e",
+      "Cálculo Automático de Impostos (ICMS, IPI, PIS, COFINS, etc.)",
+      "Envio Automático do XML e DANFE por e-mail para clientes e contabilidade",
+      "Certificado Digital A1/A3 (Suporte e Integração para assinatura)"
     ],
     highlight: true
   },
@@ -33,8 +33,8 @@ const plans = [
     badge: "Personalizado",
     icon: Wrench,
     features: [
-      "Funcionalidades desenvolvidas conforme sua necessidade",
-      "Layout e Interface Visual Personalizados",
+      "Conforme sua necessidade",
+      "Layout e Interface Personalizado",
       "Ajustes de Fluxos e Campos, adicionando ou removendo etapas, formulários, módulos",
       "Equipe de Desenvolvimento dedicada"
     ],
@@ -104,7 +104,7 @@ export default function ServicesPricing() {
                         </li>
                       ))}
                     </ul>
-                    <button className="w-full cursor-pointer py-3.5 rounded-xl bg-[#0d3b35] hover:bg-[#0a2e2a] text-white font-semibold text-sm transition-colors shadow-lg">
+                    <button className="w-full cursor-pointer shadow-md py-3.5 rounded-xl bg-[#0d3b35] hover:bg-[#0a2e2a] text-white font-semibold text-sm transition-colors">
                       Ver mais detalhes
                     </button>
                   </div>
@@ -130,7 +130,7 @@ export default function ServicesPricing() {
                       </li>
                     ))}
                   </ul>
-                  <button className="w-full cursor-pointer py-3.5 rounded-xl bg-[#f0f2f2] hover:bg-[#e1e4e4] text-[#0d3b35] font-semibold text-sm transition-colors">
+                  <button className="w-full cursor-pointer border border-gray-200 py-3.5 rounded-xl shadow-md text-[#0d3b35] font-semibold text-sm transition-colors">
                     Ver mais detalhes
                   </button>
                 </div>
