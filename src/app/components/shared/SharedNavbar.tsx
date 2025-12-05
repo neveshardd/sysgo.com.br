@@ -27,10 +27,10 @@ export default function SharedNavbar() {
 
       {/* Desktop Buttons */}
       <div className="hidden lg:flex items-center gap-4">
-        <Link href="#" className="border border-gray-200 cursor-pointer px-6 py-2.5 text-sm font-semibold text-[#0d3b35] bg-white shadow-xl rounded-xl hover:bg-gray-50 transition-all">
+        <Link href="https://cliente.sysgo.com.br" className="border border-gray-200 cursor-pointer px-6 py-2.5 text-sm font-semibold text-[#0d3b35] bg-white shadow-xl rounded-xl hover:bg-gray-50 transition-all">
           Entrar
         </Link>
-        <Link href="#" className="px-6 py-2.5 cursor-pointer text-sm font-semibold shadow-xl text-white bg-[#0d3b35] rounded-xl hover:bg-[#0a2e2a] transition-all hover:-translate-y-0.5">
+        <Link href="/servicos" className="px-6 py-2.5 cursor-pointer text-sm font-semibold shadow-xl text-white bg-[#0d3b35] rounded-xl hover:bg-[#0a2e2a] transition-all hover:-translate-y-0.5">
           Começar agora
         </Link>
       </div>
