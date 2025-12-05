@@ -49,7 +49,7 @@ export default function HomeHero() {
           <Link href="#" className="w-full sm:w-auto px-8 py-4 text-base font-semibold text-white bg-[#0d3b35] rounded-lg hover:bg-[#0a2e2a] transition-all hover:-translate-y-1">
             Contrate Agora
           </Link>
-          <Link href="#" className="w-full sm:w-auto px-8 py-4 text-base border border-gray-200 font-semibold text-[#0d3b35] bg-white shadow-xl rounded-xl transition-all">
+          <Link href="#contact" className="w-full sm:w-auto px-8 py-4 text-base border border-gray-200 font-semibold text-[#0d3b35] bg-white shadow-xl rounded-xl transition-all">
             Entrar em contato
           </Link>
         </div>
